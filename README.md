@@ -5,7 +5,7 @@
 Aquí tienes un archivo README.md con un diseño limpio, profesional y estructurado en Markdown, listo para que lo copies y lo pegues en la raíz de tu repositorio de Git.
 
 Markdown
-# ⏰ Sistema de Gestión de Alarmas (Core Lógico OOP)
+Sistema de Gestión de Alarmas (Core Lógico OOP)
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Paradigm](https://img.shields.io/badge/Paradigma-Orientado__a__Objetos-blue?style=for-the-badge)
@@ -25,7 +25,7 @@ Además del comportamiento base, incorpora tres funcionalidades de última gener
 
 ---
 
-## 🎯 Objetivos
+Objetivos
 
 El desarrollo de este software resuelve los siguientes problemas del mundo real y desafíos de ingeniería:
 
@@ -35,7 +35,7 @@ El desarrollo de este software resuelve los siguientes problemas del mundo real 
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+Tecnologías Utilizadas
 
 * **Lenguaje de Programación:** Java (Compatible con JDK 17 o superior).
 * **API de Tiempo:** `java.time.LocalTime` para un manejo nativo, exacto e inmutable del tiempo.
@@ -44,7 +44,7 @@ El desarrollo de este software resuelve los siguientes problemas del mundo real 
 
 ---
 
-## 💻 Instalación y Ejecución
+ Instalación y Ejecución
 
 Al ser un proyecto nativo y autocontenido, no requiere de gestores de dependencias externos como Maven o Gradle.
 
@@ -53,3 +53,6 @@ Al ser un proyecto nativo y autocontenido, no requiere de gestores de dependenci
 * Verificar la instalación ejecutando en tu terminal:
   ```bash
   java -version
+
+
+  
