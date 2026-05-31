@@ -2,7 +2,7 @@
 
 
 
-Aquí tienes un archivo README.md con un diseño limpio, profesional y estructurado en Markdown, listo para que lo copies y lo pegues en la raíz de tu repositorio de Git.
+
 
 Markdown
 Sistema de Gestión de Alarmas (Core Lógico OOP)
