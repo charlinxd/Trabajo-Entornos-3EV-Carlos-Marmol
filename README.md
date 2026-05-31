@@ -4,8 +4,7 @@
 
 
 
-Markdown
-Sistema de Gestión de Alarmas (Core Lógico OOP)
+
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Paradigm](https://img.shields.io/badge/Paradigma-Orientado__a__Objetos-blue?style=for-the-badge)
