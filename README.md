@@ -54,6 +54,9 @@ Al ser un proyecto nativo y autocontenido, no requiere de gestores de dependenci
   ```bash
   java -version
 
+
+  
+DIAGRAMA DE CLASES
 ![DIAGRAMA UML](diagrama_clases.png)
 
 
