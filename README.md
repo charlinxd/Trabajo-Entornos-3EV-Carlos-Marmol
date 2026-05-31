@@ -74,5 +74,9 @@ DIAGRAMA DE CASOS
 
 
 
+En este trabajo la inteligencia me ayudo a hacer gran parte del programa en cuanto codigo se refiere. Tambien el propio visual studio me ayudo a ejecutar los commits necesarios para agregarlo todo al repositorio
+
+
+
 
   
