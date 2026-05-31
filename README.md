@@ -57,6 +57,8 @@ Al ser un proyecto nativo y autocontenido, no requiere de gestores de dependenci
 
   
 DIAGRAMA DE CLASES
+
+
 ![DIAGRAMA UML](diagrama_clases.png)
 
 Gestor Alarmas tiene una relación de composición con Alarma (1 a muchos). Si el gestor se destruye, la lista en memoria de las alarmas también desaparece. El gestor es el dueño de su ciclo de vida.
@@ -66,6 +68,8 @@ La clase Main no almacena las alarmas de forma estructural, sino que depende de 
 
 
 DIAGRAMA DE CASOS
+
+
 ![DIAGRAMA CASOS](diagrama_casos.png)
 
 
