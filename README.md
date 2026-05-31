@@ -14,7 +14,7 @@ Una aplicación de consola desarrollada en Java diseñada bajo principios arquit
 
 ---
 
-## 📝 Descripción del Proyecto
+Descripción del Proyecto
 
 El sistema es un motor de gestión de alarmas horarias que permite un control exhaustivo sobre las alertas del usuario. Soporta múltiples alarmas simultáneas con repetición semanal granular y configuraciones personalizadas de audio/volumen. 
 
@@ -54,5 +54,90 @@ Al ser un proyecto nativo y autocontenido, no requiere de gestores de dependenci
   ```bash
   java -version
 
+Diagrama UML
+
+@startuml
+skinparam classAttributeIconSize 0
+skinparam monochrome true
+skinparam shadowing false
+
+title Diagrama de Clases - Sistema de Gestión de Alarmas
+
+class Alarma {
+    - {static} contadorId : int
+    - id : int
+    - hora : LocalTime
+    - etiqueta : String
+    - activa : boolean
+    - sonido : String
+    - volumen : int
+    - minutosSnooze : int
+    + Alarma(hora: LocalTime, etiqueta: String, dias: Set<DiaSemana>, sonido: String, volumen: int, categoria: Categoria)
+    + posponer() : void
+    + detener() : void
+    + getId() : int
+    + getHora() : LocalTime
+    + setHora(hora: LocalTime) : void
+    + getEtiqueta() : String
+    + setEtiqueta(etiqueta: String) : void
+    + isActiva() : boolean
+    + setActiva(activa: boolean) : void
+    + getDiasRepeticion() : Set<DiaSemana>
+    + setDiasRepeticion(dias: Set<DiaSemana>) : void
+    + getSonido() : String
+    + setSonido(sonido: String) : void
+    + getVolumen() : int
+    + setVolumen(volumen: int) : void
+    + getCategoria() : Categoria
+    + setCategoria(categoria: Categoria) : void
+    + toString() : String
+}
+
+class GestorAlarmas {
+    - modoVacaciones : boolean
+    + GestorAlarmas()
+    + agregarAlarma(alarma: Alarma) : void
+    + eliminarAlarma(id: int) : boolean
+    + buscarPorId(id: int) : Alarma
+    + listarAlarmasActivas() : void
+    + listarTodasLasAlarmas() : void
+    + setModoVacaciones(activo: boolean) : void
+    + isModoVacaciones() : boolean
+    + dispararAlarma(alarma: Alarma, scanner: Scanner) : void
+    - ejecutarRetoMatematico(scanner: Scanner) : void
+}
+
+enum DiaSemana {
+    LUNES
+    MARTES
+    MIERCOLES
+    JUEVES
+    VIERNES
+    SABADO
+    DOMINGO
+    + {static} getFinDeSemana() : List<DiaSemana>
+    + {static} getDiasLaborables() : List<DiaSemana>
+}
+
+enum Categoria {
+    TRABAJO
+    ESTUDIO
+    DEPORTE
+    MEDICINA
+    GENERAL
+}
+
+class Main {
+    + {static} main(args: String[]) : void
+}
+
+' Relaciones entre clases
+GestorAlarmas "1" *-- "0..*" Alarma : administra y contiene >
+Alarma "1" --> "0..*" DiaSemana : repite en >
+Alarma "1" --> "1" Categoria : pertenece a >
+Main ..> GestorAlarmas : usa >
+Main ..> Alarma : crea >
+
+@endum
 
   
